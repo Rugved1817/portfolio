@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rugved Katkade | AI/ML Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<canvas id="three-canvas"></canvas>
+
+<div id="preloader">
+  <div class="pre-inner">
+    <div class="pre-logo">RK</div>
+    <div class="pre-text">RE-INITIALIZING NEURAL NETWORK...</div>
+    <div class="pre-bar-wrap"><div class="pre-bar" id="preBar"></div></div>
+  </div>
+</div>
+
+<div id="zone-toast">ZONE 1: THE BEGINNING</div>
+
+<nav id="nav">
+  <div class="nav-brand">RK</div>
+  <ul class="nav-links">
+    <li><a href="#" data-target="home">HOME</a></li>
+    <li><a href="#" data-target="about">MISSION & PROJECTS</a></li>
+    <li><a href="#" data-target="skills">SKILLS</a></li>
+    <li><a href="#" data-target="experience">EXP</a></li>
+    <li><a href="#" data-target="contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+<div id="worldWrapper">
+  <div class="parallax-layer" id="stars-back"></div>
+  <div class="parallax-layer" id="stars-front"></div>
+
+  <div id="player" class="player-container bigger">
+    <div class="player-body">
+      <div class="player-head"><div class="player-visor"></div><div class="player-antenna"></div></div>
+      <div class="player-torso"><div class="player-chest-plate"></div><div class="player-jetpack"><div class="jet-flame"></div></div></div>
+      <div class="player-legs"><div class="player-leg l"></div><div class="player-leg r"></div></div>
+    </div>
+  </div>
+
+  <div id="world">
+    <!-- HOME -->
+    <section class="world-section" id="home" data-zone="THE BEGINNING">
+      <div class="hero-content">
+        <div class="hero-glitch" data-text="RUGVED">RUGVED</div>
+        <div class="hero-name"><span>KATKADE</span></div>
+        <div class="hero-title-ribbon">AI / ML ENGINEER</div>
+        <p class="hero-sub">Specializing in Scalable Backend Architecture & Production-Grade ML Pipelines.</p>
+      </div>
+    </section>
+
+    <!-- LEVEL 2: TACTICAL PROJECT INTERFACE -->
+    <section class="world-section" id="about" data-zone="PROJECT BRIEFING">
+      <div class="tactical-interface">
+        <aside class="tactical-sidebar">
+          <div class="sidebar-header">
+            <span class="label">MISSION LOG</span>
+            <h2>SUMMARY</h2>
+          </div>
+          <div class="sidebar-content">
+            <p>Orchestrating agentic workflows with <span class="highlight">LangGraph</span> and designing high-throughput <span class="highlight">FastAPI</span> and <span class="highlight">.NET Core</span> services.</p>
+            <div class="tactical-stats">
+              <div class="t-stat"><span class="t-val">15K+</span><span class="t-lab">Queries/Mo</span></div>
+              <div class="t-stat"><span class="t-val">50K+</span><span class="t-lab">Daily Users</span></div>
+            </div>
+          </div>
+        </aside>
+        <main class="tactical-main">
+          <div class="briefing-scroll">
+            <article class="project-brief">
+              <header class="brief-header">
+                <span class="brief-tag">OPERATIONAL: 01/2026</span>
+                <h3>Brandflow | Automated Marketing</h3>
+              </header>
+              <div class="brief-body">
+                <p>Engineered a multi-agent AI orchestrator using <span class="highlight">LangGraph</span>, automating campaign planning from strategy to execution.</p>
+                <ul class="brief-points">
+                  <li>Compressed marketing lifecycle from 72 hours to less than 15 minutes.</li>
+                  <li>Integrated <span class="highlight">GPT-4o</span> and <span class="highlight">RunwayML Gen-3 Alpha</span> for 100+ assets per sprint.</li>
+                  <li>Constructed state-recovery logic resulting in 98% completion rate for complex chains.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="project-brief">
+              <header class="brief-header">
+                <span class="brief-tag">RESEARCH: 08/2025</span>
+                <h3>Plant Disease Detection</h3>
+              </header>
+              <div class="brief-body">
+                <p>Developed a custom CNN-based detection model utilizing a dataset of 5,000+ high-resolution rice leaf images.</p>
+                <ul class="brief-points">
+                  <li>Achieved 97% classification accuracy and 0.96 F1-score.</li>
+                  <li>Integrated <span class="highlight">Grad-CAM</span> and <span class="highlight">Explainable AI (XAI)</span> for visual feature validation.</li>
+                  <li>Containerized inference pipeline using <span class="highlight">Docker</span> for UAV-based edge devices.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="project-brief">
+              <header class="brief-header">
+                <span class="brief-tag">SYSTEMS: 01/2025</span>
+                <h3>Low-Code Platform Development</h3>
+              </header>
+              <div class="brief-body">
+                <p>Streamlined end-to-end insurance claim workflows using AI-driven logic for a Smart Insurance System.</p>
+                <ul class="brief-points">
+                  <li>Reduced manual processing time by 35% and increased capacity by 2.5x.</li>
+                  <li>Developed scalable services using <span class="highlight">.NET</span> and <span class="highlight">Entity Framework</span> for 50,000+ records.</li>
+                  <li>Implemented policy management dashboard consolidating data from 3 disparate sources.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <!-- LEVEL 3: SKILLS -->
+    <section class="world-section" id="skills" data-zone="POWER-UPS">
+      <div class="ultimate-skills-container">
+        <div class="neural-node-card" data-level="95">
+          <div class="circular-gauge">
+            <svg class="gauge-svg"><circle class="gauge-bg" cx="70" cy="70" r="60"></circle><circle class="gauge-fill" cx="70" cy="70" r="60"></circle></svg>
+            <span class="gauge-text">95%</span>
+          </div>
+          <div class="node-info"><h3>Gen AI</h3><p>Agentic Orchestration & RAG</p></div>
+          <div class="sub-skill-stream">
+            <strong>DATA STREAM:</strong>
+            <div class="stream-item">LangGraph</div>
+            <div class="stream-item">Multi-Agent Flows</div>
+            <div class="stream-item">Vector DBs (FAISS)</div>
+            <div class="stream-item">Hybrid Search</div>
+          </div>
+        </div>
+        <div class="neural-node-card" data-level="92">
+          <div class="circular-gauge">
+            <svg class="gauge-svg"><circle class="gauge-bg" cx="70" cy="70" r="60"></circle><circle class="gauge-fill" cx="70" cy="70" r="60"></circle></svg>
+            <span class="gauge-text">92%</span>
+          </div>
+          <div class="node-info"><h3>ML & CV</h3><p>PyTorch & Computer Vision</p></div>
+          <div class="sub-skill-stream">
+            <strong>DATA STREAM:</strong>
+            <div class="stream-item">Custom CNNs</div>
+            <div class="stream-item">Explainable AI (XAI)</div>
+            <div class="stream-item">OpenCV</div>
+            <div class="stream-item">SAM 3 Models</div>
+          </div>
+        </div>
+        <div class="neural-node-card" data-level="90">
+          <div class="circular-gauge">
+            <svg class="gauge-svg"><circle class="gauge-bg" cx="70" cy="70" r="60"></circle><circle class="gauge-fill" cx="70" cy="70" r="60"></circle></svg>
+            <span class="gauge-text">90%</span>
+          </div>
+          <div class="node-info"><h3>Backend</h3><p>High-Throughput Systems</p></div>
+          <div class="sub-skill-stream">
+            <strong>DATA STREAM:</strong>
+            <div class="stream-item">FastAPI / .NET</div>
+            <div class="stream-item">SQL Optimization</div>
+            <div class="stream-item">Microservices</div>
+            <div class="stream-item">JWT / OAuth2</div>
+          </div>
+        </div>
+        <div class="neural-node-card" data-level="88">
+          <div class="circular-gauge">
+            <svg class="gauge-svg"><circle class="gauge-bg" cx="70" cy="70" r="60"></circle><circle class="gauge-fill" cx="70" cy="70" r="60"></circle></svg>
+            <span class="gauge-text">88%</span>
+          </div>
+          <div class="node-info"><h3>MLOps</h3><p>Infrastructure & Monitoring</p></div>
+          <div class="sub-skill-stream">
+            <strong>DATA STREAM:</strong>
+            <div class="stream-item">AWS SageMaker</div>
+            <div class="stream-item">Docker</div>
+            <div class="stream-item">MLflow / DVC</div>
+            <div class="stream-item">CI/CD Pipelines</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEVEL 4: RE-ENGINEERED STELLAR PATH -->
+    <section class="world-section" id="experience" data-zone="THE STELLAR PATH">
+      <div class="timeline-container">
+        <div class="timeline-backbone"></div>
+        <div class="timeline-track">
+          <!-- Node 1: Top -->
+          <div class="timeline-node-wrap">
+            <div class="timeline-connector"></div>
+            <div class="timeline-node"></div>
+            <article class="exp-card-v2">
+              <header class="exp-header">
+                <span class="exp-date-v2">09/2025 - PRESENT</span>
+                <h3>Real Value | SDE I (AI Role)</h3>
+              </header>
+              <div class="exp-body-v2">
+                <p>Automated 15,000+ monthly queries. Built 2,000+ RPS FastAPI APIs with 99.9% uptime for 50k+ daily users.</p>
+              </div>
+            </article>
+          </div>
+          <!-- Node 2: Bottom -->
+          <div class="timeline-node-wrap">
+            <div class="timeline-connector"></div>
+            <div class="timeline-node"></div>
+            <article class="exp-card-v2">
+              <header class="exp-header">
+                <span class="exp-date-v2">01/2025 - 03/2025</span>
+                <h3>Winjit Tech | SWE Intern</h3>
+              </header>
+              <div class="exp-body-v2">
+                <p>Streamlined ML pipelines for 10,000+ images. Reduced latency by 15% and increased coverage to 85%.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEVEL 5: NEXUS CONTACT POINT -->
+    <section class="world-section" id="contact" data-zone="MISSION COMPLETE">
+      <div class="nexus-wrap">
+        <div class="nexus-card">
+          <div class="card-ornament top-left">LAT: 19.0760</div>
+          <div class="card-ornament top-right">LNG: 72.8777</div>
+          <div class="card-ornament bottom-left">STABLE LINK</div>
+          <div class="card-ornament bottom-right">v2.0_SECURE</div>
+          
+          <div class="nexus-inner">
+            <span class="nexus-label">INITIATING FINAL TRANSMISSION</span>
+            <h2 class="nexus-title">INITIATE CONTACT</h2>
+            <div class="nexus-divider"></div>
+            <p class="nexus-sub">Mumbai, Maharashtra</p>
+            <p class="nexus-email">rugvedkatkade66@gmail.com</p>
+            
+            <div class="nexus-actions">
+              <a href="https://github.com/Rugved1817" target="_blank" class="nexus-btn">
+                <span class="btn-glitch">GITHUB</span>
+                <span class="btn-sub">Repositories</span>
+              </a>
+              <a href="https://linkedin.com/in/rugved-katkade-b01817rsk" target="_blank" class="nexus-btn">
+                <span class="btn-glitch">LINKEDIN</span>
+                <span class="btn-sub">Network</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nexus-hud-ring"></div>
+        <div class="nexus-hud-ring outer"></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div id="section-indicator">
+  <div class="si-dot active" data-target="home"></div>
+  <div class="si-dot" data-target="about"></div>
+  <div class="si-dot" data-target="skills"></div>
+  <div class="si-dot" data-target="experience"></div>
+  <div class="si-dot" data-target="contact"></div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
