@@ -97,28 +97,27 @@ body::after { content: ''; position: fixed; inset: 0; background: linear-gradien
 .neural-node-card:hover .sub-skill-stream { opacity: 1; visibility: visible; }
 .stream-item { padding: 0.8rem 1.5rem; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.2); border-radius: 12px; font-size: 1rem; color: #fff; font-weight: 600; text-align: left; transform: translateX(-20px); transition: 0.3s; }
 
-/* LEVEL 4: RE-ENGINEERED TIMELINE (The Fix) */
+/* LEVEL 4: COMPACT STELLAR PATH */
 .timeline-container { width: 95%; max-width: 1400px; height: 80vh; position: relative; display: flex; align-items: center; justify-content: center; z-index: 20; }
 .timeline-backbone { position: absolute; top: 50%; left: 0; width: 100%; height: 6px; background: linear-gradient(90deg, transparent, var(--secondary), var(--primary), transparent); box-shadow: var(--glow); transform: translateY(-50%); border-radius: 3px; }
 .timeline-track { width: 100%; height: 100%; position: relative; display: flex; justify-content: space-around; align-items: center; }
-.timeline-node-wrap { position: relative; width: 450px; height: 100%; display: flex; align-items: center; justify-content: center; }
-.timeline-node { width: 40px; height: 40px; background: var(--primary); border: 8px solid var(--bg-dark); border-radius: 50%; z-index: 10; box-shadow: var(--glow); position: relative; }
-.timeline-node::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 100px; border: 2px solid var(--primary); border-radius: 50%; opacity: 0.2; animation: pulseRing 2s infinite; }
+.timeline-node-wrap { position: relative; width: 400px; height: 100%; display: flex; align-items: center; justify-content: center; }
+.timeline-node { width: 25px; height: 25px; background: var(--primary); border: 5px solid var(--bg-dark); border-radius: 50%; z-index: 10; box-shadow: var(--glow); position: relative; }
+.timeline-node::after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; height: 70px; border: 2px solid var(--primary); border-radius: 50%; opacity: 0.2; animation: pulseRing 2s infinite; }
 @keyframes pulseRing { 0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0.8; } 100% { transform: translate(-50%, -50%) scale(2); opacity: 0; } }
 
-.exp-card-v2 { position: absolute; width: 550px; background: var(--glass); padding: 3rem; border-radius: 2.5rem; border: 2px solid var(--border); backdrop-filter: blur(40px); box-shadow: 0 20px 50px rgba(0,0,0,0.6); transition: 0.4s; z-index: 100; }
+.exp-card-v2 { position: absolute; width: 400px; background: var(--glass); padding: 2rem; border-radius: 2rem; border: 2px solid var(--border); backdrop-filter: blur(40px); box-shadow: 0 20px 50px rgba(0,0,0,0.6); transition: 0.4s; z-index: 100; }
 .timeline-connector { position: absolute; width: 4px; background: var(--primary); opacity: 0.5; left: 50%; transform: translateX(-50%); z-index: 5; }
 
-/* Alternating positions for the cards */
-.timeline-node-wrap:nth-child(1) .exp-card-v2 { bottom: 58%; left: 50%; transform: translateX(-50%); border-bottom: 5px solid var(--primary); }
-.timeline-node-wrap:nth-child(1) .timeline-connector { bottom: 50%; height: 8vh; }
+.timeline-node-wrap:nth-child(1) .exp-card-v2 { bottom: 56%; left: 50%; transform: translateX(-50%); border-bottom: 5px solid var(--primary); }
+.timeline-node-wrap:nth-child(1) .timeline-connector { bottom: 50%; height: 6vh; }
 
-.timeline-node-wrap:nth-child(2) .exp-card-v2 { top: 58%; left: 50%; transform: translateX(-50%); border-top: 5px solid var(--secondary); }
-.timeline-node-wrap:nth-child(2) .timeline-connector { top: 50%; height: 8vh; }
+.timeline-node-wrap:nth-child(2) .exp-card-v2 { top: 56%; left: 50%; transform: translateX(-50%); border-top: 5px solid var(--secondary); }
+.timeline-node-wrap:nth-child(2) .timeline-connector { top: 50%; height: 6vh; }
 
-.exp-header h3 { font-size: 2rem; font-weight: 900; color: #fff; margin-bottom: 1rem; }
-.exp-date-v2 { font-family: 'Press Start 2P', cursive; font-size: 0.75rem; color: var(--primary); margin-bottom: 1.5rem; display: block; }
-.exp-body-v2 p { font-size: 1.25rem; line-height: 1.6; color: var(--text-main); opacity: 0.95; }
+.exp-header h3 { font-size: 1.4rem; font-weight: 900; color: #fff; margin-bottom: 0.8rem; }
+.exp-date-v2 { font-family: 'Press Start 2P', cursive; font-size: 0.65rem; color: var(--primary); margin-bottom: 1rem; display: block; }
+.exp-body-v2 p { font-size: 1.05rem; line-height: 1.5; color: var(--text-main); opacity: 0.9; }
 
 /* LEVEL 5: NEXUS CONTACT POINT */
 .nexus-wrap { width: 100%; height: 100%; position: relative; display: flex; align-items: center; justify-content: center; z-index: 20; }
